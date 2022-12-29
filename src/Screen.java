@@ -67,8 +67,9 @@ public class Screen extends JFrame implements Runnable {
 
                 //Add image under the dropdown menu
                 teamOneImage.setLocation(125,200);
-                teamOneImage.setSize(250,250);
                 teamOneImage.setIcon(new ImageIcon(image));
+                teamOneImage.setSize(250,250);
+                content.add(teamOneImage);
             }
         });
 
@@ -101,17 +102,18 @@ public class Screen extends JFrame implements Runnable {
         teamChoiceTwo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String value=(String)teamChoiceOne.getSelectedItem();
-                String imageName=value+ ".png";
+                String value=(String)teamChoiceTwo.getSelectedItem();
+                String imageNameTwo=value+ ".png";
 
                 // Load the image file
-                ImageIcon imageIcon = new ImageIcon(imageName);
-                Image image = (imageIcon.getImage()).getScaledInstance(250,250, Image.SCALE_SMOOTH);
+                ImageIcon imageIconTwo = new ImageIcon(imageNameTwo);
+                Image imageTwo = (imageIconTwo.getImage()).getScaledInstance(250,250, Image.SCALE_SMOOTH);
 
                 //Add image under the dropdown menu
-                teamTwoImage.setLocation(125,200);
+                teamTwoImage.setLocation(900,200);
+                teamTwoImage.setIcon(new ImageIcon(imageTwo));
                 teamTwoImage.setSize(250,250);
-                teamTwoImage.setIcon(new ImageIcon(image));
+                content.add(teamTwoImage);
 
             }
         });
