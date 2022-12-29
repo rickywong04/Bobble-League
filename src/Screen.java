@@ -9,6 +9,7 @@ public class Screen extends JFrame implements Runnable {
     private static JFrame frame = new JFrame();
     private static Container content;
     private JLabel chooseYourTeam;
+    private JLabel startGame;
     final JLabel teamOneImage = new JLabel();
     final JLabel teamTwoImage = new JLabel();
 
@@ -27,9 +28,9 @@ public class Screen extends JFrame implements Runnable {
 
         //Add the "Choose Your Team" to the opening screen
         chooseYourTeam = new JLabel("Choose Your Team");
-        chooseYourTeam.setFont(new Font("Arial",Font.BOLD,30));
+        chooseYourTeam.setFont(new Font("Arial",Font.BOLD,32));
         chooseYourTeam.setSize(300,100);
-        chooseYourTeam.setLocation(520,35);
+        chooseYourTeam.setLocation(500,35);
         content.add(chooseYourTeam);
 
 
@@ -119,6 +120,12 @@ public class Screen extends JFrame implements Runnable {
         });
 
 
+        //Add Start Game Capabilities
+        startGame = new JLabel("Start Game");
+        startGame.setFont(new Font("Arial", Font.PLAIN,30));
+        startGame.setSize(200,250);
+        startGame.setLocation(570,100);
+        content.add(startGame);
     }
 
     public static void main(String[] args) {
