@@ -29,9 +29,9 @@ public class Screen extends JFrame implements Runnable {
 
         //Add the "Choose Your Team" to the opening screen
         chooseYourTeam = new JLabel("Choose Your Team");
-        chooseYourTeam.setFont(new Font("Arial",Font.BOLD,32));
-        chooseYourTeam.setSize(300,100);
-        chooseYourTeam.setLocation(500,35);
+        chooseYourTeam.setFont(new Font("Arial",Font.BOLD,45));
+        chooseYourTeam.setSize(500,100);
+        chooseYourTeam.setLocation(450,35);
         content.add(chooseYourTeam);
 
 
@@ -123,10 +123,24 @@ public class Screen extends JFrame implements Runnable {
 
         //Add Start Game Capabilities
         startGame = new JLabel("Start Game");
-        startGame.setFont(new Font("Arial", Font.PLAIN,30));
-        startGame.setSize(200,250);
-        startGame.setLocation(570,100);
+        startGame.setFont(new Font("Arial", Font.PLAIN,40));
+        startGame.setSize(300,100);
+        startGame.setLocation(543,200);
         content.add(startGame);
+
+        startGameButton = new JButton("Play");
+        startGameButton.setFont(new Font("Arial",Font.PLAIN,25));
+        startGameButton.setSize(175,50);
+        startGameButton.setLocation(560,300);
+        content.add(startGameButton);
+        startGameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+
     }
 
     public static void main(String[] args) {
