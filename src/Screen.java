@@ -10,6 +10,7 @@ public class Screen extends JFrame implements Runnable {
     private static Container content;
     private JLabel chooseYourTeam;
     private JLabel startGame;
+    private JButton startGameButton;
     final JLabel teamOneImage = new JLabel();
     final JLabel teamTwoImage = new JLabel();
 
@@ -35,7 +36,7 @@ public class Screen extends JFrame implements Runnable {
 
 
         //Add Dropdown Menu for Team One
-        String [] teams = {"Bad Cattitude", "Messy Messis", "B-Team","Troubles Bruin","Defenders Van Dijk"};
+        String [] teams = {"Bad Cattitude", "Messy Messis", "B-Team","Troubles Bruin","Defenders Van Dijk","Turtle De France"};
         final JComboBox<String> teamChoiceOne = new JComboBox<>(teams);
         teamChoiceOne.setSize(300,100);
         teamChoiceOne.setLocation(100,125);
